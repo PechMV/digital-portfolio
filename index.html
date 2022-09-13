@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVP Portfolio</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <title> MVP Portfolio</title>
 </head>
+
 <body>
-    <header class="header">
+    <header>
         <h1>Melissa Vanny Pech</h1>
         <nav>
             <a href="#about-me">About me</a>
@@ -18,34 +19,53 @@
             <a href="#resume">Resume</a>
         </nav>
     </header>
+    <figure class="subheader">
+        <div id="subheader-text">"Bleep Bleep Bloop" - R2-D2</div></figure>
     <main>
-        <article>
-            <h2>About Me</h2>
+        <aside class="aside"> 
+            <h2> About Me</h2>
+        </aside>
+        <article id="about-me">
+            <img id="img-of-me" src="./assets/images/Me.jpg" alt="picture of Melissa">
             <p>
-                Hi! My name is Melissa Vanny Pech, I am 23 years old, learning to code in bootcamp. I love to play video games and watch horror movies. 
+                Hi! My name is Melissa Vanny Pech, I am 23 years old, learning to code in bootcamp. I love to play video games and watch horror movies. This is my first e-portfolio! Lorem ipsum dolor sit amet. Sed beatae sunt eos eveniet rerum non distinctio reiciendis sit consequatur rerum laudantium ipsam qui ipsum velit. Hic voluptatem possimus ut alias ducimus id doloribus corrupti quo dolores ipsam sed alias expedita aut maxime iste. Non consequatur omnis eum voluptatum obcaecati ea earum fugiat. Et deserunt assumenda rem culpa quam est omnis itaque sit blanditiis voluptas ea dolorum voluptas. Ut facilis amet qui impedit possimus et dignissimos quibusdam aut vitae galisum. Qui aperiam reprehenderit quo similique inventore qui neque omnis aut odit autem eum laboriosam iure. Sed voluptas cumque sit commodi ullam et aliquam ipsa. Et dolorem numquam qui iusto voluptas qui dolorem voluptatibus qui quis sunt! Sed porro tenetur sed architecto veritatis sed quisquam magnam cum itaque neque id sunt omnis aut itaque eaque.
             </p>
         </article>
-        <article>
-            <h2>Work</h2>
-            <section>Example 1
-                <p>Example 1 details</p>
+        <aside class="aside">
+            <h2> Work</h2>
+        </aside>
+        <article class="card-wrapper">
+            <section class="card">
+                <img src="./assets/images/lemon.jpg" alt="bubbly lemon water">
+                <h2> Project 1</h2>
+                <p>Project 1 details</p>
             </section>
-            <section>Example 2
+            <section class="card">
+                <img src="./assets/images/bitcoin.jpg" alt="bitcoin">
+                <h2> Project 2</h2>
                 <p>Example 2 details</p>
             </section>
-            <section>Example 3
+            <section class="card">
+                <img src="./assets/images/vintage.jpg" alt="yellow vintage car">
+                <h2> Project 3</h2>
                 <p>Example 3 details</p>
             </section>
-            <section>Example 4
+            <section class="card">
+                <img src="./assets/images/lightbulb.jpg" alt="lightbulb">
+                <h2> Example 4</h2>
                 <p>Example 4 details</p>
             </section>
-            <section>Example 5
+            <section class="card">
+                <img src="./assets/images/piano.jpg" alt="flower on piano">
+                <h2> Example 5</h2>
                 <p>Example 5 details</p>
             </section>
         </article>
     </main>
     <footer>
-        <h2>Contact Me</h2>
+        <aside class="aside">
+            <h2> Contact Me</h2>
+        </aside>
         <ul>
             <li>
                 <a href="#phone-number">(612)806-1524</a>
@@ -60,7 +80,7 @@
                 <a href="#twitter">Twitter</a>
             </li>
             <li>
-                <a href="Spotify">Spotify</a>
+                <a href="#Spotify">Spotify</a>
             </li>
         </ul>
     </footer>
