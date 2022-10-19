@@ -49,14 +49,14 @@ header nav a {
 }
 
 .aside {
-    float:left;
+    /* float:left; */
     display: flex;
     flex-direction: column;
     margin: 50px 25px 50px 25px;
     padding: 5px;
     height: auto;
     width: 10%;
-    border-right: 4px solid #000000;
+    /* border-right: 4px solid #000000; */
     font-size: 35px;
     position: absolute;
 }
@@ -77,17 +77,29 @@ header nav a {
 
 .card {
     padding-bottom: 16px;
+    padding-left: 10px;
+    width: 20%;
+}
+
+.project1-card {
+    padding-bottom: 16px;
+    padding-left: 15px;
+    width: 40%;
+    margin-left: 15%;
+    border-left: 4px solid #000000;
+
 }
 
 .card-wrapper {
-    padding-left: 50px;
-    margin-left: 300px;
+    padding-left: 15px;
+    margin-left: 15%;
     display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    width: 30cm;
-    padding-left: 16px;
+    /* justify-content: space-between; */
+    /* max-width: 100%; */
+    width: 85%;
     padding-right: 16px;
+    border-left: 4px solid #000000;
+
 }
 
 img {
@@ -95,6 +107,7 @@ img {
     object-fit: contain;
     display: block;
     justify-content: center;
+    transition: .5s;
 }
 
 footer ul li {
@@ -114,3 +127,23 @@ a:hover {
     background-color: #FFE81F;
     color:#000000;
 }
+
+.card img:hover, .project1-card img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .card-wrapper { 
+        display: block;
+        border: none;
+    }
+    .project1-card {
+        display: block;
+        border: none;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
